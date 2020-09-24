@@ -23,6 +23,31 @@ def motion(f, step):
     return f
 
 
+def BinarySearch(arr, size, key):
+    IndexArr = []
+    for i in range(size):
+        IndexArr.append(int(i))
+    for i in range(size):
+        if i <= size - 2:
+            if arr[i] > arr[i+1]:
+                arr[i], arr[i+1] = arr[i+1], arr[i]
+                IndexArr[i], IndexArr[i+1] = IndexArr[i+1], IndexArr[i]
+
+    bottom = 0
+    top = len(arr)
+    while bottom <= top:
+        mid = int((bottom + top) // 2)
+        if key < arr[mid]:
+            top = mid - 1
+        elif key > arr[mid]:
+            bottom = mid + 1
+        else:
+            print("ID =", IndexArr[mid])
+            break
+    else:
+        print("No such number")
+
+
 def main():
     array = []
     while True:
@@ -65,7 +90,9 @@ def main():
 
     motion(array, k)
     print(array)
+    key = int(input("Enter a number to search: "))
+    print("BINARY SEARCH:")
+    print(BinarySearch(array, size, key))
 
 
 main()
-
