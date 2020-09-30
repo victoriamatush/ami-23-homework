@@ -1,33 +1,45 @@
 from random import randint
 
-def evklid(a, b):
-    if a % b == 0:
-        return b
-    else:
-        return evklid(b, a % b)
 
-while True:
-    try:
-        N = int(input("Enter amount of numbers: "))
-        a = int(input("Enter first number: "))
-        b = int(input("Enter second number: "))
-        break
-    except ValueError:
-        print('Please enter a whole number')
+def nsd(a, b):
+    while a*b != 0:
+        if a >= b:
+            a = a % b
+        else:
+            b = b % a
+    return a + b
 
-array = list()
-results = list()
 
-for i in range (int(N)):
-    array.append(randint(int(a), int(b)))
-print("Random numbers:" + str(array))
+def nskforpairs(arr):
+    res = list()
 
-print("Найменше спільне кратне для кожної пари: ")
-for i in array:
-    for k in array:
-        if i != k:
-            evklid(i, k)
-            nsk = i*k
-            if nsk not in results:
-                results.append(nsk);
-                print("[" + str(i) + ", " + str(k) + "]: " + str(nsk))
+    for j in arr:
+        for k in arr:
+            if j != k:
+                nsk = j * k // nsd(j, k)
+                if nsk not in res:
+                    res.append(nsk)
+                    print("[" + str(j) + ", " + str(k) + "]: " + str(nsk))
+
+
+def main():
+    array = list()
+
+    while True:
+        try:
+            n = int(input("Enter amount of numbers: "))
+            a = int(input("Enter first number: "))
+            b = int(input("Enter second number: "))
+            break
+        except ValueError:
+            print('Please enter a whole number')
+
+    for p in range(int(n)):
+        array.append(randint(int(a), int(b)))
+    print("Random numbers:" + str(array))
+
+    print("Найменше спільне кратне для кожної пари: ")
+    nskforpairs(array)
+
+
+main()
