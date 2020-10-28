@@ -1,0 +1,6 @@
+[{"id": 8, "code": "340-871-238", "title": "Bed", "type": "box", "amount": 1005, "price": 1100.01, "data": "the best"},
+{"id": 2, "code": "983-561-852", "title": "Bottle", "type": "box", "amount": 34, "price": 49.99, "data": "good quality"},
+{"id": 4, "code": "053-458-287", "title": "Envelope", "type": "letter", "amount": 90, "price": 10.55, "data": "organic"},
+{"id": 6, "code": "123-123-123", "title": "Laptop", "type": "box", "amount": 100500, "price": 19.19, "data": "perfect"},
+{"id": 10, "code": "395-432-234", "title": "Book", "type": "letter", "amount": 120, "price": 30.44, "data": "interesting"},
+{"id": 3, "code": "345-431-973", "title": "Stickers", "type": "letter", "amount": 340, "price": 34.99, "data": "fine"}]
