@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Edit a {{ good.title }}
+    </h1>
+
+    <form method='POST' style="display: flex; flex-direction: column;">
+        <input type='text' name='title' placeholder="Item title" value="{{ good.title }}" required />
+        <input type='text' name='item_code' placeholder="Item code" value="{{ good.item_code }}" required />
+        {% if good.good_type.value == "box" %}
+            <input type='radio' name='good_type' value="box" checked /> Box
+            <input type='radio' name='good_type' value="letter" /> Letter
+        {% else %}
+            <input type='radio' name='good_type' value="box" /> Box
+            <input type='radio' name='good_type' value="letter" checked /> Letter
+        {% endif %}
+        <input type='number' name='amount' placeholder="Item amount" value="{{ good.amount }}" required /> 
+        <input type='number' name='item_price' placeholder="Item price" value="{{ good.item_price }}" required /> 
+        <input type='text' name='item_data' placeholder="Item data" value="{{ good.item_data }}" required />
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>

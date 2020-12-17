@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for good in goods %}
+        <h4>{{ good.title }} — {{ good.amount }} — {{ good.good_type.value }} — {{ good.item_price }}$ — {{ good.item_date }} / {{ good.item_code }}</h4>
+    {% endfor %}
+</body>
+</html>
