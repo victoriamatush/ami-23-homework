@@ -1,0 +1,49 @@
+{
+  "Goods": [
+    {
+      "Id": 3,
+      "Code": "222-333-444",
+      "Title": "Title",
+      "Type": "box",
+      "Amount": 2,
+      "Price": 40.0,
+      "Data": "fffff"
+    },
+    {
+      "Id": 1,
+      "Code": "222-333-445",
+      "Title": "another",
+      "Type": "ppppp",
+      "Amount": 4,
+      "Price": 499.0,
+      "Data": "kkkk"
+    },
+    {
+      "Id": 6,
+      "Code": "221-331-444",
+      "Title": "Title}}}",
+      "Type": "box",
+      "Amount": 9,
+      "Price": 4.0,
+      "Data": "aga"
+    },
+    {
+      "Id": 10,
+      "Code": "222-111-444",
+      "Title": "novenka",
+      "Type": "box",
+      "Amount": 55,
+      "Price": 13,
+      "Data": "smth new"
+    },
+    {
+      "Id": 5,
+      "Code": "555-555-555",
+      "Title": "t-i-t-l-e",
+      "Type": "Letter",
+      "Amount": 9,
+      "Price": 490,
+      "Data": "hey"
+    }
+  ]
+}
