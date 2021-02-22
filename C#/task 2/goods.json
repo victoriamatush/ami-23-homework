@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 10,
+    "Code": "222-111-444",
+    "Title": "LaptopXr",
+    "Type": "box",
+    "Amount": 55,
+    "Price": 100,
+    "Data": "new"
+  },
+  {
+    "Id": 19,
+    "Code": "222-111-333",
+    "Title": "laptopTr",
+    "Type": "box",
+    "Amount": 10,
+    "Price": 200,
+    "Data": "qualites"
+  },
+  {
+    "Id": 14,
+    "Code": "222-111-222",
+    "Title": "paper",
+    "Type": "letter",
+    "Amount": 500,
+    "Price": 3.55,
+    "Data": "wow"
+  },
+  {
+    "Id": 6,
+    "Code": "888-111-444",
+    "Title": "pencil",
+    "Type": "box",
+    "Amount": 10,
+    "Price": 10,
+    "Data": "china"
+  },
+  {
+    "Id": 18,
+    "Code": "555-555-555",
+    "Title": "Fotocard",
+    "Type": "letter",
+    "Amount": 90,
+    "Price": 49,
+    "Data": "hey"
+  }
+]
