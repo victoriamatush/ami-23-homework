@@ -1,0 +1,56 @@
+﻿[
+  {
+    "Id": 100.1,
+    "Code": "222-333-444",
+    "Title": "Title",
+    "Type": "box",
+    "Amount": 2,
+    "Price": 40.0,
+    "Data": "good"
+  },
+  {
+    "Id": 1,
+    "Code": "222-333",
+    "Title": "another",
+    "Type": "",
+    "Amount": 4,
+    "Price": 499.0,
+    "Data": "perfect"
+  },
+  {
+    "Id": 2,
+    "Code": "222-333-888",
+    "Title": "###",
+    "Type": "letter",
+    "Amount": 4,
+    "Price": 499.0,
+    "Data": "kkkk"
+  },
+  {
+    "Id": 6,
+    "Code": "222-333-999",
+    "Title": "wrongAmount",
+    "Type": "box",
+    "Amount": 49.9,
+    "Price": 499.0,
+    "Data": "kkkk"
+  },
+  {
+    "Id": 7,
+    "Code": "222-333",
+    "Title": "wrongPrice",
+    "Type": "letter",
+    "Amount": 4,
+    "Price": "4",
+    "Data": "kkkk"
+  },
+  {
+    "Id": 6,
+    "Code": "221-331-444",
+    "Title": "wrongData",
+    "Type": "box",
+    "Amount": 9,
+    "Price": 4.0,
+    "Data": "data&&&"
+  }
+]
